@@ -1,3 +1,5 @@
+package ru.vsu.cs.oop25.g4.alekseeva_a_p.tanks;
+
 import java.util.Scanner;
 
 public class Game {
@@ -55,7 +57,8 @@ public class Game {
                 if (newX < 0 || newX > 8 || newY < 0 || newY > 8 || map[newY][newX] == '#') {
                     System.out.println("ты упираешься в стену\n");
                     actionWasValid = false;
-                } else {
+                }
+                else {
                     t.x = newX;
                     t.y = newY;
                 }
